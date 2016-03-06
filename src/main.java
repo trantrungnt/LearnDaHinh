@@ -6,11 +6,11 @@ import java.util.Vector;
 public class main {
     public static void main(String[] args)
     {
-        Vector<IArea> vector = new Vector<>();
+        /*Vector<IArea> vector = new Vector<>();
         vector.add(new Circle(0, 0, 5));
         vector.add(new Rectangle(0, 0, 4, 5));
         vector.add(new Triangle(0, 0, 1, 1, 4, 1));
-        vector.add(new Rectangle(1, 1, 2, 3));
+        vector.add(new Rectangle(1, 1, 2, 3));*/
 
         /*double sumDienTich=0;
         for(Shape hinh : vector){
@@ -20,7 +20,7 @@ public class main {
         System.out.println("Tong cua cac hinh la: " + sumDienTich );*/
 
         //tinh tong dien tich cua hinh chu nhat
-        double sum =0;
+        /*double sum =0;
         for (IArea hinh: vector)
         {
             System.out.println(hinh.getClass().toString());
@@ -29,12 +29,20 @@ public class main {
             }
         }
 
-        System.out.println(sum);
+        System.out.println(sum);*/
 
         //it dung cach nay
         /*if(hinh.getClass().toString().equals("class Reclangle")){
             sum += hinh.dientich();
         }*/
 
+        Vector<Shape> vector = new Vector<>();
+        vector.add(new Circle(0, 0, 5));
+        vector.add(new Rectangle(0, 0, 4, 5));
+        vector.add(new Triangle(0, 0, 1, 1, 4, 1));
+
+        //khai bao abstract cho phuong thuc draw trong class cha Shape
+        for (Shape shape: vector)
+            shape.draw();
     }
 }
