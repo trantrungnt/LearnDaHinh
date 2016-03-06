@@ -1,7 +1,7 @@
 /**
  * Created by TrungNT on 3/5/2016.
  */
-public abstract class Shape {
+public abstract class Shape implements IArea{
     public int getX() {
         return x;
     }
@@ -36,7 +36,6 @@ public abstract class Shape {
 
     //phuong thuc ao cua class cha Shape
     public abstract void draw();
-    public abstract double dientich();
 
 
     void move()

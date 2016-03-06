@@ -1,7 +1,7 @@
 /**
  * Created by TrungNT on 3/5/2016.
  */
-public class Triangle extends Shape {
+public class Triangle extends Shape implements IArea{
     private int x1;
 
     public int getX2() {
@@ -54,10 +54,7 @@ public class Triangle extends Shape {
     }
 
 
-    @Override
-    public double dientich() {
-        return 10;
-    }
+
 
     public Triangle(int x, int y, int x1, int y1, int x2, int y2)
     {
@@ -69,4 +66,8 @@ public class Triangle extends Shape {
     }
 
 
+    @Override
+    public double tinhDienTich() {
+        return 90;
+    }
 }

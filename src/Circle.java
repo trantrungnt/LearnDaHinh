@@ -1,7 +1,7 @@
 /**
  * Created by TrungNT on 3/5/2016.
  */
-public class Circle extends Shape {
+public class Circle extends Shape implements IArea{
     public int getRadius() {
         return radius;
     }
@@ -24,11 +24,6 @@ public class Circle extends Shape {
         System.out.println("Circle");
     }
 
-    @Override
-    public double dientich() {
-
-        return radius*radius*Math.PI;
-    }
 
     public Circle(int x, int y, int radis)
     {
@@ -37,4 +32,8 @@ public class Circle extends Shape {
     }
 
 
+    @Override
+    public double tinhDienTich() {
+        return radius*radius*Math.PI;
+    }
 }

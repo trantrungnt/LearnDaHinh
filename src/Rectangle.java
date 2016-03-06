@@ -1,7 +1,7 @@
 /**
  * Created by TrungNT on 3/5/2016.
  */
-public class Rectangle extends Shape{
+public class Rectangle extends Shape implements IArea{
     private int with;
 
     public int getHeight() {
@@ -29,6 +29,7 @@ public class Rectangle extends Shape{
     }
 
     public Rectangle(int x, int y, int with, int height) {
+        super(x, y);
         this.with = with;
         this.height = height;
     }
@@ -38,10 +39,9 @@ public class Rectangle extends Shape{
         System.out.println("Rectangle");
     }
 
+
     @Override
-    public double dientich() {
+    public double tinhDienTich() {
         return this.with*this.height;
     }
-
-
 }
