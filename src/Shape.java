@@ -36,7 +36,10 @@ public abstract class Shape implements IArea{
 
     //phuong thuc ao cua class cha Shape
     public abstract void draw();
-
+    /*public void draw()
+    {
+        System.out.println("Shape");
+    }*/
 
     void move()
     {
