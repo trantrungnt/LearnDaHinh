@@ -93,3 +93,7 @@ double sum =0;
 Trong tính đa hình, có 2 kỹ thuật gồm 
 + Đa hình tĩnh: (nạp chồng và ghi đè)
 + Đa hình động: (dùng Interface)
+
+##Tham khảo
++ [Tính đa hình trong OOP với Java](https://youtu.be/9J1j3F1QX8w)
+
